@@ -1,0 +1,22 @@
+* {
+    background-color: #003748;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+h2 {
+    font-size: 2.5em;
+    padding-left: 1em;
+    font-family: 'Lato', sans-serif;
+}
+th{
+    background-color: #007194;
+    font-family: 'Raleway', sans-serif;
+    padding: 0.2em 0.4em;
+    font-size: small;
+}
+td{
+    font-size: smaller;
+}
+footer{
+    text-align: center;
+}
