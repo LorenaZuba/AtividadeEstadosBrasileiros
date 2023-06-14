@@ -1,4 +1,4 @@
-* {
+body {
     background-color: #003748;
     color: white;
     font-family: 'Lato', sans-serif;
@@ -15,6 +15,7 @@ th{
     font-size: small;
 }
 td{
+    background-color: #0097C4;
     font-size: smaller;
 }
 footer{
