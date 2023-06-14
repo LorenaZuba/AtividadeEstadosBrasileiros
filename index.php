@@ -13,22 +13,24 @@
 
     <main>
         <?php
-            $Acre = array(
-                'bandeira' => '<img width=50 src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Bandeira_do_Acre.svg" alt="bandeira do Acre">',
-                'unidfed' => 'Acre',
-                'abrev' => 'AC',
-                'sedgov' => 'Rio Branco',
-                'area' => '164 122,2',
-                'pop' => '795 145',
-                'dens' => 4.30,
-                'pib' => '13 622 000',
-                'porcentagem' => 0.2,
-                'pibcap' => '16 953,46',
-                'idh' => 0.663,
-                'alfab' => '86,9%',
-                'mortinf' => '17,0‰',
-                'expvida' => '73,9 anos',
-            );
+            $unidsfed = [
+                'Acre' => array(
+                    'bandeira' => '<img width=50 src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Bandeira_do_Acre.svg" alt="bandeira do Acre">',
+                    'unidfed' => 'Acre',
+                    'abrev' => 'AC',
+                    'sedgov' => 'Rio Branco',
+                    'area' => '164 122,2',
+                    'pop' => '795 145',
+                    'dens' => 4.30,
+                    'pib' => '13 622 000',
+                    'porcentagem' => 0.2,
+                    'pibcap' => '16 953,46',
+                    'idh' => 0.663,
+                    'alfab' => '86,9%',
+                    'mortinf' => '17,0‰',
+                    'expvida' => '73,9 anos',
+                )
+            ];
             echo var_dump($Acre);
         ?>
 
@@ -52,7 +54,18 @@
                 </tr>
             </thead>
             <tbody>
-
+                <?php
+                foreach ($unidsfed as $estados => $estado){
+                    echo "<tr>";
+                    foreach ($estado as $arranjointerno => $dadointerno){
+                        echo "<td>$dadointerno</td>";
+                    }
+                    echo "</tr>";
+                }
+                ?>
+                <tr>
+            
+                </tr>
             </tbody>
         </table>
     </main>
